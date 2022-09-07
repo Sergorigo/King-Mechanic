@@ -5,6 +5,7 @@
    <meta charset="UTF-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
    <link rel="stylesheet" href="css/style.css">
    <link rel="shortcut icon" href="favicon.ico">
    <title>King Mechanic</title>
@@ -41,7 +42,7 @@
                   <div class="top-menu__phone"></div>
                   <div class="top-menu__text">
                      ЗВОНИТЕ <br>
-                     +7 (953) 184-05-48
+                     <a href="tel:+79531840548">+7 (953) 184-05-48</a>
                   </div>
                </div>
                <!-- Главная кнопка страницы-->
@@ -59,12 +60,12 @@
             <!-- Меню навигации -->
             <nav class="header__menu menu">
                <ul class="menu__list">
-                  <li class="menu__item"><a href="#" class="menu__link">О нас</a></li>
-                  <li class="menu__item"><a href="#" class="menu__link">Гарантии </a></li>
-                  <li class="menu__item"><a href="#" class="menu__link">Услуги</a></li>
-                  <li class="menu__item"><a href="#" class="menu__link">Галерея</a></li>
-                  <li class="menu__item"><a href="#" class="menu__link">Отзывы</a></li>
-                  <li class="menu__item"><a href="#" class="menu__link">Контакты</a></li>
+                  <li class="menu__item"><a href="#about" class="menu__link">О нас</a></li>
+                  <li class="menu__item"><a href="#promise" class="menu__link">Гарантии </a></li>
+                  <li class="menu__item"><a href="#servises" class="menu__link">Услуги</a></li>
+                  <li class="menu__item"><a href="#gallery" class="menu__link">Галерея</a></li>
+                  <li class="menu__item"><a href="#feedback" class="menu__link">Отзывы</a></li>
+                  <li class="menu__item"><a href="#contacts" class="menu__link">Контакты</a></li>
                </ul>
                <!-- иконка поиска по сайту -->
                <a href="#" class="menu__magnifier">
@@ -80,7 +81,7 @@
          <!-- Первый блок страницы, с главным заголовком -->
          <div class="any-repair">
             <div class="any-repair__bgd">
-               <img src="img/bg_images/Heroshot_1.png" alt="фоновое изображение">
+               <img src="img/bg_images/Heroshot_1.webp" alt="фоновое изображение">
                <!-- Заголовок + кнопка -->
                <div class="any-repair__container">
                   <h1 class="any-repair__title">Ремонт автомобилей любой сложности</h1>
@@ -95,6 +96,11 @@
                      </div>
                   </a>
                </div>
+               <a href="#about" class="any-repair__bottom-arrow">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+               </a>
             </div>
          </div>
          <!-- Нависающий блок - о нас -->
@@ -102,13 +108,13 @@
             <div class="about-us__container">
                <!-- Бекграунд блока -->
                <div class="about-us__bg">
-                  <img src="img/bg_images/bg_Gears.png" alt="бекграунд">
+                  <img src="img/bg_images/bg_Gears.webp" alt="бекграунд">
                </div>
                <!-- Блок с контентом  -->
                <div class="about-us__body">
                   <!-- Текстовый блок  -->
                   <div class="about-us__content">
-                     <h3 class="about-us__subtitle subtitle">О нас</h3>
+                     <h3 id="about" class="about-us__subtitle subtitle">О нас</h3>
                      <h2 class="about-us__title title">Nemo enim ipsam voluptatem quia voluptas in proident</h2>
                      <p class="about-us__text">Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis
                         suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur. Quis autem vel eum iure
@@ -118,7 +124,7 @@
                   <!-- Основное изображение  -->
                   <div class="about-us__image-box">
                      <div class="about-us__picture">
-                        <img src="img/about_us/engine.png" alt="Фотография двигателя">
+                        <img src="img/about_us/engine.webp" alt="Фотография двигателя">
                      </div>
                   </div>
                </div>
@@ -127,7 +133,7 @@
          <!-- Блок гарантии  -->
          <div class="promise">
             <div class="promise__container">
-               <h3 class="promise__subtitle subtitle">Гарантии</h3>
+               <h3 id="promise" class="promise__subtitle subtitle">Гарантии</h3>
                <h2 class="promise__title title">Гарантируем качественный сервис</h2>
                <!-- Контентная часть  -->
                <div class="promise__content">
@@ -215,11 +221,11 @@
          <!-- блок с карточками  -->
          <div class="servises">
             <div class="servises__bg">
-               <img class="top" src="img/bg_images/bg_Gears.png" alt="бекграунд">
-               <img class="bottom" src="img/bg_images/bg_Gears.png" alt="бекграунд">
+               <img class="top" src="img/bg_images/bg_Gears.webp" alt="бекграунд">
+               <img class="bottom" src="img/bg_images/bg_Gears.webp" alt="бекграунд">
 
                <div class="servises__container">
-                  <h3 class="servises__subtitle subtitle">Наши услуги</h3>
+                  <h3 id="servises" class="servises__subtitle subtitle">Наши услуги</h3>
                   <h2 class="servises__title title">Качественный сервис по всем направлениям</h2>
                   <div class="servises__content">
                      <!-- блок с карточками  -->
@@ -311,10 +317,10 @@
             </div>
          </div>
          <!-- блок с визиткой и статистикой клиентов  -->
-         <div class="customers">
+         <div id="contacts" class="customers">
             <div class="customers__bg">
-               <img class="customers__top" src="img/bg_images/bg_Gears.png" alt="бекграунд">
-               <img class="customers__bottom" src="img/bg_images/bg_Gears.png" alt="бекграунд">
+               <img class="customers__top" src="img/bg_images/bg_Gears.webp" alt="бекграунд">
+               <img class="customers__bottom" src="img/bg_images/bg_Gears.webp" alt="бекграунд">
                <div class="customers__container">
                   <div class="customers__content">
                      <!-- карточка визитка  -->
@@ -335,10 +341,10 @@
                                  6Б (бокс 37)</a>
                            </li>
                            <li class="customers__item">Евгений <br>
-                              <a href="#" class="customers__link">+7 (953) 184-05-48</a>
+                              <a href="tel:+79531840548" class="customers__link">+7 (953) 184-05-48</a>
                            </li>
                            <li class="customers__item">
-                              <a href="#" class="customers__link">KM@yandex.ru</a>
+                              <a href="mailto:KM@yandex.ru" class="customers__link">KM@yandex.ru</a>
                            </li>
                         </ul>
                         <!-- панель соц сетей  -->
@@ -378,8 +384,282 @@
                </div>
             </div>
          </div>
+         <!-- блок галерея + слайдеры -->
+         <div class="gallery">
+            <img class="gallery__bg" src="img/bg_images/bg_Gears.webp" alt="бекграунд">
+            <div class="gallery__container">
+               <div class="gallery__content">
+                  <h3 class="gallery__subtitle subtitle">Наша галерея</h3>
+                  <h2 id="gallery" class="gallery__title title">Знакомтесь с нашими работами</h2>
+                  <!-- меню с табами -->
+                  <ul class="gallery__submenu submenu">
+                     <li class="submenu__item active" data-tab="tab-1">Галерея</li>
+                     <li class="submenu__item" data-tab="tab-2">Малярные работы</li>
+                     <li class="submenu__item" data-tab="tab-3">Сварочные работы</li>
+                     <li class="submenu__item" data-tab="tab-4">Ремонтные работы</li>
+                  </ul>
+                  <!-- слайдеры  -->
+                  <div class="gallery__sliders">
+                     <!-- Слайдер 1  -->
+                     <div class="gallery__slider swiper-container on tab-1 ">
+                        <div class="gallery__slider-wrapper swiper-wrapper">
+                           <div class="gallery__slide swiper-slide">
+                              <div class="gallery__picture">
+                                 <img src="img/gallery/Image1.png" alt="изображение">
+                              </div>
+                           </div>
+                           <div class="gallery__slide swiper-slide">
+                              <div class="gallery__picture">
+                                 <img src="img/bg_images/Heroshot_1.webp" alt="изображение">
+                              </div>
+                           </div>
+                           <div class="gallery__slide swiper-slide">
+                              <div class="gallery__picture">
+                                 <img src="img/bg_images/Heroshot_2.webp" alt="изображение">
+                              </div>
+                           </div>
+                           <div class="gallery__slide swiper-slide">
+                              <div class="gallery__picture">
+                                 <img src="img/bg_images/Heroshot_3.webp" alt="изображение">
+                              </div>
+                           </div>
+
+                        </div>
+                        <div class="gallery__left"></div>
+                        <div class="gallery__right"></div>
+                        <div class="swiper-pagination"></div>
+                     </div>
+                     <!-- Слайдер 2  -->
+                     <div class="gallery__slider swiper-container tab-2">
+                        <div class="gallery__slider-wrapper swiper-wrapper">
+                           <div class="gallery__slide swiper-slide">
+                              <div class="gallery__picture">
+                                 <img src="img/gallery/Image1.png" alt="изображение">
+                              </div>
+                           </div>
+                           <div class="gallery__slide swiper-slide">
+                              <div class="gallery__picture">
+                                 <img src="img/bg_images/Heroshot_1.png" alt="изображение">
+                              </div>
+                           </div>
+                           <div class="gallery__slide swiper-slide">
+                              <div class="gallery__picture">
+                                 <img src="img/bg_images/Heroshot_2.png" alt="изображение">
+                              </div>
+                           </div>
+                           <div class="gallery__slide swiper-slide">
+                              <div class="gallery__picture">
+                                 <img src="img/bg_images/Heroshot_3.png" alt="изображение">
+                              </div>
+                           </div>
+
+                        </div>
+                        <div class="gallery__left"></div>
+                        <div class="gallery__right"></div>
+                        <div class="swiper-pagination"></div>
+                     </div>
+                     <!-- Слайдер 3  -->
+                     <div class="gallery__slider swiper-container tab-3">
+                        <div class="gallery__slider-wrapper swiper-wrapper">
+                           <div class="gallery__slide swiper-slide">
+                              <div class="gallery__picture">
+                                 <img src="img/gallery/Image1.png" alt="изображение">
+                              </div>
+                           </div>
+                           <div class="gallery__slide swiper-slide">
+                              <div class="gallery__picture">
+                                 <img src="img/bg_images/Heroshot_1.png" alt="изображение">
+                              </div>
+                           </div>
+                           <div class="gallery__slide swiper-slide">
+                              <div class="gallery__picture">
+                                 <img src="img/bg_images/Heroshot_2.png" alt="изображение">
+                              </div>
+                           </div>
+                           <div class="gallery__slide swiper-slide">
+                              <div class="gallery__picture">
+                                 <img src="img/bg_images/Heroshot_3.png" alt="изображение">
+                              </div>
+                           </div>
+
+                        </div>
+                        <div class="gallery__left"></div>
+                        <div class="gallery__right"></div>
+                        <div class="swiper-pagination"></div>
+                     </div>
+                     <!-- Слайдер 4  -->
+                     <div class="gallery__slider swiper-container tab-4">
+                        <div class="gallery__slider-wrapper swiper-wrapper">
+                           <div class="gallery__slide swiper-slide">
+                              <div class="gallery__picture">
+                                 <img src="img/gallery/Image1.png" alt="изображение">
+                              </div>
+                           </div>
+                           <div class="gallery__slide swiper-slide">
+                              <div class="gallery__picture">
+                                 <img src="img/bg_images/Heroshot_1.png" alt="изображение">
+                              </div>
+                           </div>
+                           <div class="gallery__slide swiper-slide">
+                              <div class="gallery__picture">
+                                 <img src="img/bg_images/Heroshot_2.png" alt="изображение">
+                              </div>
+                           </div>
+                           <div class="gallery__slide swiper-slide">
+                              <div class="gallery__picture">
+                                 <img src="img/bg_images/Heroshot_3.png" alt="изображение">
+                              </div>
+                           </div>
+
+                        </div>
+                        <div class="gallery__left"></div>
+                        <div class="gallery__right"></div>
+                        <div class="swiper-pagination"></div>
+                     </div>
 
 
+
+
+                  </div>
+               </div>
+            </div>
+         </div>
+         <!-- блок с отзывами -->
+         <div id="feedback" class="feedback">
+            <div class="feedback__container">
+
+               <div class="feedback__header">
+                  <h3 class="feedback__subtitle subtitle">Наши клиенты</h3>
+                  <h2 class="feedback__title title">Отзывы наших клиентов</h2>
+               </div>
+
+               <div class="feedback__content swiper-container">
+                  <div class="feedback__prev"></div>
+                  <div class="feedback__next"></div>
+                  <div class="swiper-pagination"></div>
+                  <div class="feedback__wrapper swiper-wrapper">
+                     <!-- карточка с отзывом  -->
+                     <div class="feedback__card card-feedback swiper-slide">
+                        <p class="card-feedback__text">“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                           eiusmod tempor incididunt ut labore et dolore ex magna aliqua. Ut enim illum ad minim veniam,
+                           quis ea exercitation ullamco cillum ut enim dolore.”
+                        </p>
+                        <div class="card-feedback__person-container">
+                           <div class="card-feedback__avatar">
+                              <img src="img/feedback/avatar_1.webp" alt="аватарка">
+                           </div>
+                           <span class="card-feedback__name">Андрей Т</span>
+                        </div>
+                     </div>
+                     <!-- карточка с отзывом  -->
+                     <div class="feedback__card card-feedback swiper-slide">
+                        <p class="card-feedback__text">“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                           eiusmod tempor incididunt ut labore et dolore ex magna aliqua. Ut enim illum ad minim veniam,
+                           quis ea exercitation ullamco cillum ut enim dolore.”
+                        </p>
+                        <div class="card-feedback__person-container">
+                           <div class="card-feedback__avatar">
+                              <img src="img/feedback/avatar_2.webp" alt="аватарка">
+                           </div>
+                           <span class="card-feedback__name">Оксана Р</span>
+                        </div>
+                     </div>
+                     <!-- карточка с отзывом  -->
+                     <div class="feedback__card card-feedback swiper-slide">
+                        <p class="card-feedback__text">“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                           eiusmod tempor incididunt ut labore et dolore ex magna aliqua. Ut enim illum ad minim veniam,
+                           quis ea exercitation ullamco cillum ut enim dolore.”
+                        </p>
+                        <div class="card-feedback__person-container">
+                           <div class="card-feedback__avatar">
+                              <img src="img/feedback/Nikita.webp" alt="аватарка">
+                           </div>
+                           <span class="card-feedback__name">Никита К</span>
+                        </div>
+                     </div>
+                     <!-- карточка с отзывом  -->
+                     <div class="feedback__card card-feedback swiper-slide">
+                        <p class="card-feedback__text">“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                           eiusmod tempor incididunt ut labore et dolore ex magna aliqua. Ut enim illum ad minim veniam,
+                           quis ea exercitation ullamco cillum ut enim dolore.”
+                        </p>
+                        <div class="card-feedback__person-container">
+                           <div class="card-feedback__avatar">
+                              <img src="img/feedback/Srgey.webp" alt="аватарка">
+                           </div>
+                           <span class="card-feedback__name">Сергей Г</span>
+                        </div>
+                     </div>
+                     <!-- карточка с отзывом  -->
+                     <div class="feedback__card card-feedback swiper-slide">
+                        <p class="card-feedback__text">“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                           eiusmod tempor incididunt ut labore et dolore ex magna aliqua. Ut enim illum ad minim veniam,
+                           quis ea exercitation ullamco cillum ut enim dolore.”
+                        </p>
+                        <div class="card-feedback__person-container">
+                           <div class="card-feedback__avatar">
+                              <img src="img/feedback/unknown.svg" alt="аватарка">
+                           </div>
+                           <span class="card-feedback__name">Пользователь</span>
+                        </div>
+                     </div>
+                     <!-- карточка с отзывом  -->
+                     <div class="feedback__card card-feedback swiper-slide">
+                        <p class="card-feedback__text">“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                           eiusmod tempor incididunt ut labore et dolore ex magna aliqua. Ut enim illum ad minim veniam,
+                           quis ea exercitation ullamco cillum ut enim dolore.”
+                        </p>
+                        <div class="card-feedback__person-container">
+                           <div class="card-feedback__avatar">
+                              <img src="img/feedback/unknown.svg" alt="аватарка">
+                           </div>
+                           <span class="card-feedback__name">Пользователь</span>
+                        </div>
+                     </div>
+                     <!-- карточка с отзывом  -->
+                     <div class="feedback__card card-feedback swiper-slide">
+                        <p class="card-feedback__text">“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                           eiusmod tempor incididunt ut labore et dolore ex magna aliqua. Ut enim illum ad minim veniam,
+                           quis ea exercitation ullamco cillum ut enim dolore.”
+                        </p>
+                        <div class="card-feedback__person-container">
+                           <div class="card-feedback__avatar">
+                              <img src="img/feedback/unknown.svg" alt="аватарка">
+                           </div>
+                           <span class="card-feedback__name">Пользователь</span>
+                        </div>
+                     </div>
+                     <!-- карточка с отзывом  -->
+                     <div class="feedback__card card-feedback swiper-slide">
+                        <p class="card-feedback__text">“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                           eiusmod tempor incididunt ut labore et dolore ex magna aliqua. Ut enim illum ad minim veniam,
+                           quis ea exercitation ullamco cillum ut enim dolore.”
+                        </p>
+                        <div class="card-feedback__person-container">
+                           <div class="card-feedback__avatar">
+                              <img src="img/feedback/unknown.svg" alt="аватарка">
+                           </div>
+                           <span class="card-feedback__name">Пользователь</span>
+                        </div>
+                     </div>
+                     <!-- карточка с отзывом  -->
+                     <div class="feedback__card card-feedback swiper-slide">
+                        <p class="card-feedback__text">“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                           eiusmod tempor incididunt ut labore et dolore ex magna aliqua. Ut enim illum ad minim veniam,
+                           quis ea exercitation ullamco cillum ut enim dolore.”
+                        </p>
+                        <div class="card-feedback__person-container">
+                           <div class="card-feedback__avatar">
+                              <img src="img/feedback/unknown.svg" alt="аватарка">
+                           </div>
+                           <span class="card-feedback__name">Пользователь</span>
+                        </div>
+                     </div>
+                  </div>
+
+               </div>
+            </div>
+         </div>
 
 
 
@@ -479,21 +759,21 @@
                </p>
                <!-- иконки социальных сетей  -->
                <div class="footer__media-icons">
-                  <a href="https://vk.com/kingmechanic" class="vk">
+                  <a href="https://vk.com/kingmechanic" target="_blank" class="vk">
                      <svg width="24px" height="24px" fill="#C40B0B" viewBox="0 0 24 24"
                         xmlns="http://www.w3.org/2000/svg">
                         <path
                            d="m23.456 5.784c-.27.849-.634 1.588-1.09 2.259l.019-.03q-.672 1.12-1.605 2.588-.8 1.159-.847 1.2c-.138.173-.234.385-.267.618l-.001.007c.027.212.125.397.268.535l.4.446q3.21 3.299 3.611 4.548c.035.092.055.198.055.309 0 .194-.062.373-.167.52l.002-.003c-.176.181-.422.293-.694.293-.03 0-.061-.001-.09-.004h.004-2.631c-.001 0-.003 0-.005 0-.337 0-.647-.118-.89-.314l.003.002c-.354-.291-.669-.606-.951-.948l-.009-.012q-.691-.781-1.226-1.315-1.782-1.694-2.63-1.694c-.021-.002-.045-.003-.07-.003-.165 0-.319.051-.446.138l.003-.002c-.104.13-.167.298-.167.479 0 .036.002.07.007.105v-.004c-.027.314-.043.679-.043 1.048 0 .119.002.237.005.355v-.017 1.159c.01.047.016.101.016.156 0 .242-.11.458-.282.601l-.001.001c-.387.177-.839.281-1.316.281-.102 0-.202-.005-.301-.014l.013.001c-1.574-.03-3.034-.491-4.275-1.268l.035.02c-1.511-.918-2.763-2.113-3.717-3.525l-.027-.042c-.906-1.202-1.751-2.56-2.471-3.992l-.07-.154c-.421-.802-.857-1.788-1.233-2.802l-.06-.185c-.153-.456-.264-.986-.31-1.535l-.002-.025q0-.758.892-.758h2.63c.024-.002.052-.003.081-.003.248 0 .477.085.658.228l-.002-.002c.2.219.348.488.421.788l.003.012c.484 1.367.997 2.515 1.587 3.615l-.067-.137c.482.97 1.015 1.805 1.623 2.576l-.023-.031q.8.982 1.248.982c.009.001.02.001.032.001.148 0 .277-.08.347-.2l.001-.002c.074-.19.117-.411.117-.641 0-.049-.002-.098-.006-.146v.006-3.879c-.021-.457-.133-.884-.32-1.267l.008.019c-.124-.264-.273-.492-.45-.695l.003.004c-.164-.164-.276-.379-.311-.619l-.001-.006c0-.17.078-.323.2-.423l.001-.001c.121-.111.283-.178.46-.178h.008 4.146c.022-.003.047-.004.073-.004.195 0 .37.088.486.226l.001.001c.103.188.164.413.164.651 0 .038-.002.075-.005.112v-.005 5.173c-.002.024-.003.052-.003.08 0 .184.051.357.139.504l-.002-.004c.073.108.195.178.333.178h.001c.176-.012.336-.07.471-.162l-.003.002c.272-.187.506-.4.709-.641l.004-.005c.607-.686 1.167-1.444 1.655-2.25l.039-.07c.344-.57.716-1.272 1.053-1.993l.062-.147.446-.892c.155-.446.571-.76 1.06-.76.019 0 .038 0 .057.001h-.003 2.631q1.066 0 .8.981z" />
                      </svg>
                   </a>
-                  <a href="#" class="telegram">
+                  <a href="#" target="_blank" class="telegram">
                      <svg width="24" height="20" viewBox="0 0 24 24" fill="#C40B0B" xmlns="http://www.w3.org/2000/svg">
                         <path
                            d="M9.63262 15.1813L9.2687 20.7653C9.78938 20.7653 10.0149 20.5213 10.2853 20.2283L12.7264 17.6833L17.7847 21.7243C18.7124 22.2883 19.366 21.9913 19.6163 20.7933L22.9365 3.8214L22.9374 3.8204C23.2317 2.3244 22.4415 1.73941 21.5377 2.1064L2.02135 10.2574C0.689406 10.8214 0.709573 11.6314 1.79493 11.9984L6.78447 13.6913L18.3742 5.78039C18.9196 5.38639 19.4155 5.60439 19.0076 5.99839L9.63262 15.1813Z"
                            fill="#C40B0B" />
                      </svg>
                   </a>
-                  <a href="#" class="youtube">
+                  <a href="#" target="_blank" class="youtube">
                      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path
                            d="M10 15L15.19 12L10 9V15ZM21.56 7.17C21.69 7.64 21.78 8.27 21.84 9.07C21.91 9.87 21.94 10.56 21.94 11.16L22 12C22 14.19 21.84 15.8 21.56 16.83C21.31 17.73 20.73 18.31 19.83 18.56C19.36 18.69 18.5 18.78 17.18 18.84C15.88 18.91 14.69 18.94 13.59 18.94L12 19C7.81 19 5.2 18.84 4.17 18.56C3.27 18.31 2.69 17.73 2.44 16.83C2.31 16.36 2.22 15.73 2.16 14.93C2.09 14.13 2.06 13.44 2.06 12.84L2 12C2 9.81 2.16 8.2 2.44 7.17C2.69 6.27 3.27 5.69 4.17 5.44C4.64 5.31 5.5 5.22 6.82 5.16C8.12 5.09 9.31 5.06 10.41 5.06L12 5C16.19 5 18.8 5.16 19.83 5.44C20.73 5.69 21.31 6.27 21.56 7.17Z"
@@ -507,11 +787,11 @@
             <div class="footer__menu">
                <h3 class="footer__subtitle">Меню навигации</h3>
                <ul class="footer__list">
-                  <li class="footer__item"><a href="#" class="footer__link">О нас</a></li>
-                  <li class="footer__item"><a href="#" class="footer__link">Гарантии</a></li>
-                  <li class="footer__item"><a href="#" class="footer__link">Услуги</a></li>
-                  <li class="footer__item"><a href="#" class="footer__link">Галерея</a></li>
-                  <li class="footer__item"><a href="#" class="footer__link">Отзывы</a></li>
+                  <li class="footer__item"><a href="#about" class="footer__link">О нас</a></li>
+                  <li class="footer__item"><a href="#promise" class="footer__link">Гарантии</a></li>
+                  <li class="footer__item"><a href="#servises" class="footer__link">Услуги</a></li>
+                  <li class="footer__item"><a href="#gallery" class="footer__link">Галерея</a></li>
+                  <li class="footer__item"><a href="#feedback" class="footer__link">Отзывы</a></li>
                </ul>
             </div>
             <!-- Режим работы  -->
@@ -531,9 +811,11 @@
             <div class="footer__info">
                <h3 class="footer__subtitle">Контакты</h3>
                <ul class="contacts">
-                  <li class="contacts__place">Суворов, Ленинского Юбилея ул, 6Б (бокс 37)</li>
-                  <li class="contacts__phone">+7 (953) 184-05-48</li>
-                  <li class="contacts__email">KM@yandex.ru</li>
+                  <li class="contacts__place"><a href="https://clck.ru/sczhQ" target="_blank">Суворов, Ленинского Юбилея
+                        ул, 6Б (бокс
+                        37)</a></li>
+                  <li class="contacts__phone"><a href="tel:+79531840548">+7 (953) 184-05-48</a></li>
+                  <li class="contacts__email"><a href="mailto:">KM@yandex.ru</a></li>
                </ul>
             </div>
          </div>
@@ -546,4 +828,8 @@
          </div>
       </footer>
    </div>
+   <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+   <script src="js/slider.js"></script>
+   <script src="js/slidersClicker.js"></script>
+   <script src="js/testimonials.js"></script>
 </body>
