@@ -89,7 +89,8 @@ body {
   font-display: swap;
 }
 [class*=__container] {
-  max-width: 1020px;
+  max-width: 1050px;
+  padding: 0px 15px;
   margin: 0px auto;
 }
 
@@ -330,6 +331,7 @@ body {
   line-height: 1;
   color: #fff;
   margin: 0px 0px 48px 0px;
+  padding: 0px 15px;
   position: absolute;
   top: 280px;
   left: 0;
@@ -912,6 +914,8 @@ body {
   width: 100%;
   height: 100%;
   z-index: 5;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .gallery__right {
   background: url("../img/gallery/arrow_outlined.svg") 0 0 no-repeat;
@@ -1079,7 +1083,7 @@ body {
   position: absolute;
   top: 0;
   left: 0;
-  background: url("../img/statistics/background_image.png") center/cover no-repeat;
+  background: url("../img/statistics/background_image.webp") center/cover no-repeat;
 }
 .statistics__container {
   position: relative;
@@ -1181,7 +1185,7 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding: 0px 0px 100px 0px;
+  padding: 0px 15px 100px 15px;
 }
 .footer__sotial {
   -webkit-box-flex: 0;
